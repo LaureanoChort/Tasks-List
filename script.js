@@ -79,17 +79,17 @@ const filter = e => {
     const todos = todoList.childNodes;
     todos.forEach(function(todo) {
         switch (e.target.value) {
-            case "Todas":
+            case "todas":
                 todo.style.display = "flex";
                 break;
-            case "Completadas":
+            case "completadas":
                 if (todo.classList.contains("completed")) {
                     todo.style.display = "flex";
                 } else {
                     todo.style.display = "none";
                 }
                 break;
-            case "Pendientes":
+            case "pendientes":
                 if (!todo.classList.contains("completed")) {
                     todo.style.display = "flex";
                 } else {
